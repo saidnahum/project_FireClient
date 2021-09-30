@@ -80,8 +80,10 @@
 </template>
 
 <script>
-
+import { mapState } from 'vuex'
 export default {
-
+   computed: {
+      ...mapState(['data1', 'data2'])
+   }
 };
 </script>
