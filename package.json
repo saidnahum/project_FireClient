@@ -10,9 +10,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest",
-    "heroku-prebuild": "npm i -f",
-    "heroku-postbuild": "npm run build"
+    "test": "jest"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
