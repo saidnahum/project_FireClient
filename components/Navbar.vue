@@ -1,9 +1,9 @@
 <template>
-   <div class="bg-gray-200 py-7">
+   <div class="bg-gray-200 py-4">
       <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto flex items-center justify-between">
          <!-- header logo -->
          <div class="header-logo">
-            <h1 class="font-semibold text-black leading-relaxed"><nuxt-link to="/">Fire Alarm</nuxt-link></h1>
+            <h1 class="font-bold text-black leading-relaxed text-2xl hover:text-gray-600"><nuxt-link to="/">Fire Alarm</nuxt-link></h1>
          </div>
 
          <div class="links">
@@ -22,14 +22,14 @@
    
             <!-- Navbar -->
             <nav class="navbar hidden md:block">
-               <ul class="flex space-x-8 text-sm font-semibold">
-                     <li><nuxt-link to="/productos" class="active border-b-2 border-orange-500 pb-2">Productos</nuxt-link></li>
-                     <li><nuxt-link to="/items" class="hover:text-orange-500">Mis Extinguidores</nuxt-link></li>
+               <ul class="flex space-x-8 text-xl font-bold">
+                     <li><nuxt-link to="/productos" class="active border-b-2 border-orange-500 pb-2 hover:text-gray-600">Productos</nuxt-link></li>
+                     <li><nuxt-link to="/items" class="hover:text-orange-500 hover:text-gray-600">Mis Rentas</nuxt-link></li>
                </ul>
             </nav>
    
             <!-- mobile navbar -->
-            <div class="mobile-navbar">         
+            <div class="mobile-navbar">          
                <!-- navbar wrapper -->
                <div class="navbar-wrapper fixed top-0 left-0 h-full bg-white z-30 w-64 shadow-lg p-5" 
                      v-show="isOpen" 
@@ -46,8 +46,8 @@
                         </button>
                      </div>
                      <ul class="divide-y">
-                        <li><a href="#" class="my-4 inline-block active font-bold">Productos</a></li>
-                        <li><a href="#" class="my-4 inline-block hover:text-orange-500">Mis Extintores</a></li>
+                        <li><nuxt-link to="/productos" class="my-4 inline-block active font-bold">Productos</nuxt-link></li>
+                        <li><nuxt-link to="/items" class="my-4 inline-block hover:text-orange-500">Mis Extintores</nuxt-link></li>
                         <li><a href="#" class="my-8 w-full text-center font-semibold cta inline-block bg-orange-500 hover:bg-orange-600 px-3 py-2 rounded text-white font-normal">Get the App</a></li>
                      </ul>
    

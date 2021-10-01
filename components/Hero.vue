@@ -69,7 +69,7 @@
                </div>
 
                <!-- hero image -->
-               <div class="hero-image col-span-5 px-10">
+               <div class="hero-image col-span-7 sm:col-span-5 mt-5 sm:mt-0 px-10">
                   <img src="~/assets/svg/extintor.svg" class="w-96">
                </div>
             </div>

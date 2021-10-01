@@ -1,6 +1,5 @@
 <template>
    <div>
-      <Navbar/>
       <LargeCardDisplay
          v-for="cardInfo in largeCardSections.slice(0,1)"
          :key="cardInfo.id"
